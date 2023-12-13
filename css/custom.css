@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --white-color: #fff;
+    --primary-color: #FFCBDB;
+    --secundary-color: #94596A;
+    --destaque-color: #66293B;
+    --gray-color: #d3d3d3;
+    --destaque-gray-color: #5e5e5e;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--gray-color);
+}
+
+/* header */
+
+.container {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    background-color: var(--secundary-color);
+    border-bottom: solid var(--destaque-color) border 1px;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: var(--destaque-color);
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: var(--white-color);
+    justify-content: space-between;
+
+}
+
+.navbar .redes-sociais  {
+    display: flex;
+}
+
+.navbar .redes-sociais a {
+    display: block;
+   padding: 10px;
+   font-size: 30px;
+   color: #66293B;
+   justify-content: end;
+}
